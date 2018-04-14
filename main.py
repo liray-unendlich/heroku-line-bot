@@ -66,8 +66,8 @@ def message_text(event):
     print(event.source.user_id)
     line_bot_api.push_message(event.source.user_id, TextSendMessage(text="支払い用QRは下のものです。"))
     line_bot_api.push_message(event.source.user_id, ImageSendMessage(
-        original_content_url='https://api.qrserver.com/v1/create-qr-code/?data=line://oaMessage/@qqv2017k/?send&size=300x300&format=jpg',
-        preview_image_url='https://api.qrserver.com/v1/create-qr-code/?data=line://oaMessage/@qqv2017k/?send&size=200x200&format=jpg'
+        original_content_url='https://api.qrserver.com/v1/create-qr-code/?data=line://oaMessage/@qqv2017k/&size=300x300&format=jpg',
+        preview_image_url='https://api.qrserver.com/v1/create-qr-code/?data=line://oaMessage/@qqv2017k/&size=200x200&format=jpg'
     ))
 
 
