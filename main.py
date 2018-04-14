@@ -69,7 +69,7 @@ def message_text(event):
     line_bot_api.push_message(event.source.user_id, ImageSendMessage(
         original_content_url='http://livedoor.blogimg.jp/tokumeidayoww/imgs/f/1/f1b21bc7.jpg',
         preview_image_url='http://livedoor.blogimg.jp/tokumeidayoww/imgs/f/1/f1b21bc7-s.jpg'
-    )
+    ))
 
 
 if __name__ == "__main__":
