@@ -68,7 +68,7 @@ def message_text(event):
     line_bot_api.push_message(event.source.user_id, TextSendMessage(text="こんばんは"))
     line_bot_api.push_message(event.source.user_id, ImageSendMessage(
         original_content_url='https://api.qrserver.com/v1/create-qr-code/?data=line://oaMessage/@qqv2017k/$send_' + event.source.user_id + '&size=300x300&format=jpg',
-        preview_image_url='https://api.qrserver.com/v1/create-qr-code/?data=line://oaMessage/@qqv2017k/$send_' + event.source.user_id + '&size=100x100&format=jpg'
+        preview_image_url='https://api.qrserver.com/v1/create-qr-code/?data=line://oaMessage/@qqv2017k/$send_&size=100x100&format=jpg'
     ))
 
 
