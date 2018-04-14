@@ -66,8 +66,8 @@ def message_text(event):
     print(event.source.user_id)
     line_bot_api.push_message(event.source.user_id, TextSendMessage(text=event.message.text))
     line_bot_api.push_message(event.source.user_id, ImageSendMessage(
-        original_content_url='https://chart.apis.google.com/chart?chs=400x400&cht=qr&chl=line://oaMessage/qqv2017k/'
-        preview_image_url='https://chart.apis.google.com/chart?chs=100x100&cht=qr&chl=line://oaMessage/qqv2017k/'
+        original_content_url='http://livedoor.blogimg.jp/tokumeidayoww/imgs/f/1/f1b21bc7.jpg'
+        preview_image_url='http://livedoor.blogimg.jp/tokumeidayoww/imgs/f/1/f1b21bc7-s.jpg'
     )
 
 
