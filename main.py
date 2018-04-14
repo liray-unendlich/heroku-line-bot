@@ -67,8 +67,8 @@ def message_text(event):
     line_bot_api.push_message(event.source.user_id, TextSendMessage(text=event.message.text))
     line_bot_api.push_message(event.source.user_id, TextSendMessage(text="こんばんは"))
     line_bot_api.push_message(event.source.user_id, ImageSendMessage(
-        original_content_url='http://livedoor.blogimg.jp/tokumeidayoww/imgs/f/1/f1b21bc7.jpg',
-        preview_image_url='http://livedoor.blogimg.jp/tokumeidayoww/imgs/f/1/f1b21bc7-s.jpg'
+        original_content_url='https://api.qrserver.com/v1/create-qr-code/?data=%22line://oaMessage/@qqv2017k/%22&size=500x500&format=jpg',
+        preview_image_url='https://api.qrserver.com/v1/create-qr-code/?data=%22line://oaMessage/@qqv2017k/%22&size=100x100&format=jpg'
     ))
 
 
