@@ -12,7 +12,6 @@
 #  License for the specific language governing permissions and limitations
 #  under the License.
 
-import asyncio
 import os
 import sys
 from argparse import ArgumentParser
@@ -63,8 +62,8 @@ def callback():
 
 
 @handler.add(MessageEvent, message=TextMessage)
-async def message_text(event):
-    await line_bot_api.reply_message(
+def message_text(event):
+    line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=event.message.text)
     )
