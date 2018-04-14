@@ -66,8 +66,9 @@ def message_text(event):
     line_bot_api.reply_message(
         event.reply_token,
         #TextSendMessage(text=event.message.type)
-        TextSendMessage(text=event.source.userId)
+        TextSendMessage(text=event.message.text)
     )
+    print(event)
 
 
 if __name__ == "__main__":
