@@ -65,8 +65,9 @@ def callback():
 def message_text(event):
     print(event.source.user_id)
     line_bot_api.push_message(event.source.user_id, TextSendMessage(text=event.message.text))
-    line_bot_api.push_message(event.source.user_id, ImageSendMessage(original_content_url="https://chart.apis.google.com/chart?chs=400x400&cht=qr&chl=line://oaMessage/@qqv2017k/'$send '+ event.source.user_id"
-        preview_image_url="https://chart.apis.google.com/chart?chs=100x100&cht=qr&chl=line://oaMessage/@qqv2017k/'$send '+ event.source.user_id"
+    line_bot_api.push_message(event.source.user_id, ImageSendMessage(
+        original_content_url='https://chart.apis.google.com/chart?chs=400x400&cht=qr&chl=line://oaMessage/@qqv2017k/$send'
+        preview_image_url='https://chart.apis.google.com/chart?chs=100x100&cht=qr&chl=line://oaMessage/@qqv2017k/'
     )
 
 
