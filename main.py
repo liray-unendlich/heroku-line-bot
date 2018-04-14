@@ -63,9 +63,9 @@ def callback():
 
 
 @handler.add(MessageEvent, message=TextMessage)
-async def message_text(event):
+def message_text(event):
     print(event.source.user_id)
-    await line_bot_api.push_message(event.source.user_id,TextSendMessage(text=event.message.text))
+    line_bot_api.push_message(event.source.user_id,TextSendMessage(text=event.message.text))
 
 
 if __name__ == "__main__":
